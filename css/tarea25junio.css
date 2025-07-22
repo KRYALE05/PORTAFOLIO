@@ -1,0 +1,204 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: lightgoldenrodyellow;
+}
+nav
+{
+    display: flex;
+    width: 50%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+header li{
+    list-style: none;
+    margin: auto;
+}
+.logo img
+{
+    width: 50px;
+    height: 50px;
+}
+header button
+{
+    padding: 2px 20px 2px 20px;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(77, 3, 77), rgb(243, 186, 112), white);
+}
+.hero
+{
+    display: flex;
+    flex-direction: column;
+}
+.hero figure img
+{
+    width: 100%;
+}
+.textohero
+{
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+}
+.titulo
+{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 40px;
+}
+.textotitulo
+{
+    color: aliceblue;
+    font-size: 20px;
+}
+.hero button 
+{
+    margin: 2%;
+    padding: 5px 20px 5px 20px;
+    background: linear-gradient(to top, rgb(77, 3, 77), rgb(243, 186, 112), white);
+    box-shadow: 2px 4px 6px rgb(243, 186, 112);
+    border-radius: 20px;
+}
+.titulo2
+{
+    text-align: center;
+    margin: 5%;
+}
+.titulo2 h2{
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+.titulo2 p
+{
+ font-size: 20px;
+}
+.contenedorcard
+{
+    display: flex;
+    width: 100%;
+}
+.card
+{
+    margin: 5%;
+    gap: 3%;
+}
+.imagencard img
+{
+    width: 100%;
+}
+.textcard p
+{
+    padding: 5% 0 ;
+}
+.hover a
+{
+    text-decoration: none;
+    color: black;
+} 
+.active a
+{
+    text-decoration: none;
+    color: black;
+}
+.link a
+{
+    text-decoration: none;
+    color: black;
+} 
+.visit a
+{
+    text-decoration: none;
+    
+   /* color: black;*/
+}
+.hover a:hover
+{
+    color: fuchsia;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.active a:active
+{
+    color: aquamarine;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.link a:link
+{
+    color: greenyellow;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.visit a:visited
+{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+footer img
+{
+    width: 50px;
+    height: 50px;
+}
+footer li
+{
+    list-style: none;
+    font-size: 30px;
+    padding: 10px;
+}
+footer p
+{
+    font-size: 30px;
+}
+footer section{
+    display: flex;
+    padding:  10px;
+}
+.listas
+{
+    width: 70%;
+}
+.pielogo
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: 5%;
+}
+.pielogo p
+{
+    padding-top: 2%;
+}
+.negro
+{
+    font-weight: bold;
+}
+.divilist
+{ 
+    width: 100%;
+}
+.ordenar
+{
+    display: flex;
+    flex-direction: column;
+  
+    
+} 

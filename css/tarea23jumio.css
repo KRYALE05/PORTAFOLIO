@@ -1,0 +1,292 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: #f5f5f5;
+}
+header
+{
+    position: sticky;
+    top: 0%;
+    
+}
+.barra
+{
+    display: flex;
+    justify-content: start;
+    gap: 0,5%;
+    background-color: rgb(68, 67, 67);
+}
+.barra li
+{  
+   position: relative;
+   display: block;
+   width: 10%;
+   
+}
+
+.barra a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 7%;
+    text-align: center;
+       
+}
+.menudrop
+{
+    display: none; /*me permite ocultar el menu de Dropdwon*/
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(68, 67, 67);
+    z-index: 1000; /*le da prioridad para verse, va a quedar por encima*/
+    overflow: hidden; /*si algo se sale lo va a ocultar*/
+}
+.menudrop li
+{
+    font-size: 15px;
+    padding: 7%;
+    width: 100%;
+    height: 100%;
+}
+.drop:hover .menudrop /* Si pasa el mouse por encima de la clase .drop (o el li que contiene a Dropdown), muestra el menú hijo .menudrop”*/
+{
+    display: block;/*le permitea la lista que se comporte como un bloque*/
+}
+.barra li:hover
+{
+    background-color: black;
+    display: block;
+    font-weight: bold;
+    
+
+}
+.menudrop li:hover
+{
+    background-color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.carrusel
+{
+    width: 100%;
+    margin: auto auto;
+    overflow: hidden; /*si algo se sale del contenedor no lo muestre*/
+}
+.carrusel ul
+{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation-name: carru;
+    animation-duration: 30s;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ 
+}
+
+.carrusel li
+{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto
+{
+    position: absolute;
+    text-align: left;
+    padding: 0 250px;
+    top: 250px;
+    color: #ffffff;
+}
+.texto h2
+{
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+.carrusel img
+{
+    width: 100%;
+}
+.aprender a
+{
+    text-decoration-line: none;
+    background: linear-gradient(to top, #5c128d, #1cb7ff); /*boton con degradación*/
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 5px;
+    
+
+}
+.aprender
+{
+   margin-top: 5%; 
+    
+}
+.aprender a:hover
+{
+    text-decoration: underline;
+}
+
+@keyframes carru
+ {
+     from {
+    transform: translateX(0); /* Comienza desde el inicio */
+  }
+  to {
+    transform: translateX(-75%); /* Se mueve hasta la mitad (4 imágenes) */
+  }
+}
+@media( max-width:991px)/*esta funcion lo que dice es que apliques estos estilos al carrusel si la pantalla esta pequeña 991px como tables o celulares*/
+{
+    body{
+        padding: 0;
+    }
+    .carrusel{
+        width: 100%;
+    }
+    .texto
+    {
+        top: 50px;
+        padding: 0 25px;
+    }
+    .texto h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .texto p{
+        font-size: 15px;
+    }
+}
+.cardcontenedor
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+   
+    
+}
+.card
+{
+    padding: 2%;
+    margin: 5%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.circulo
+{
+    padding: 1%;
+   
+    display: block;  /*hace que el circulo se convierta en un bloque para poder centrarlo*/
+    margin-left: auto; /*centra horizontalmente*/
+    margin-right: auto; /*centra horizontalmente*/
+    max-width: 100%; /*no permite que la imagen se salga del contenedor circulo*/
+    height: auto;/*mantiene las proporciones del circulo*/ 
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background-color: rgb(169, 170, 169);
+}
+.botoncirculo
+{
+    background-color: rgb(169, 170, 169);
+    padding: 3%;
+    margin: 8%;
+    border-radius: 10px;
+}
+.botoncirculo a
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.botoncirculo:hover
+{
+    text-decoration: underline rgb(75, 11, 117);
+    background: linear-gradient(to top,rgb(75, 11, 117) , rgb(169, 170, 169)); /*boton con degradación*/
+}
+
+.card h2
+{
+    font-size: 30px;
+    padding: 10%;
+}
+.navegadores
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.navegadores h2
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+.chrome
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0% 5% 0%;
+}
+.textochrome
+{
+    width: 50%;
+}
+.imagenchrome
+{
+    width: 50%;
+}
+.firefox
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0% 5% 0%;
+}
+.imagenfirefox
+{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.imagenfirefox img
+{
+    width: 100%;
+
+}
+.textofirefox
+{
+    width: 50%;
+}
+.safari
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0% 5% 0%;
+}
+.textosafari
+{
+    width: 50%;
+}
+.imagensafari
+{
+    width: 50%;
+}
